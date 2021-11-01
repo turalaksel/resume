@@ -1,0 +1,352 @@
+%!TeX program = pdflatex
+% Tural Aksel's Curriculum Vitae
+% Email: turala@nautilus.bio
+% Web: https://turalaksel.com/
+% Repo: https://github.com/turalaksel/cv
+
+\documentclass[12pt,letterpaper]{report}
+
+\usepackage[T1]{fontenc} % output T1 font encoding (8-bit) for accented characters as single glyph
+\usepackage[strict,autostyle]{csquotes} % smart and nestable quote marks
+\usepackage[USenglish]{babel} % regionalize hyphens, quote marks, etc automatically
+\usepackage{microtype}% improve text appearance with kerning, etc
+\usepackage{datetime} % enable formatting of date output
+\usepackage{tabto}    % make nice tabbing
+\usepackage{hyperref} % enable hyperlinks and pdf metadata
+\usepackage{geometry} % manually set page margins
+\usepackage{enumitem} % enumerate with [resume] option
+\usepackage{titlesec} % allow custom section fonts
+\usepackage{setspace} % custom line spacing
+
+% what is your name?
+\newcommand{\myname}{Tural Aksel}
+
+% select default typefaces
+\usepackage{ebgaramond} % document's serif typeface
+\usepackage{helvet}     % document's sans serif typeface
+
+% how far to tab for list items with left-aligned date: different fonts need different widths
+\newcommand{\listtabwidth}{1.7cm}
+
+% define font to use as document's title
+\newcommand{\namefont}[1]{{\normalfont\bfseries\Huge{#1}}}
+
+% set section heading fonts and before/after spacing
+\SetTracking{encoding=*, family=\sfdefault}{30} % increase sans serif headings tracking
+\titleformat{\section}{\lsstyle\sffamily\small\bfseries\uppercase}{}{}{}{}
+\titlespacing{\section}{0pt}{30pt plus 4pt minus 4pt}{8pt plus 2pt minus 2pt}
+
+% set subsection heading fonts and before/after spacing
+\titleformat{\subsection}{\lsstyle\sffamily\footnotesize\bfseries}{}{}{}{}
+\titlespacing{\subsection}{0pt}{16pt plus 4pt minus 4pt}{4pt plus 2pt minus 2pt}
+
+% set page margins (assumes letter paper)
+\geometry{body={6.5in, 9.0in},
+    left=1.0in,
+    top=1.0in}
+
+% prevent paragraph indentation
+\setlength\parindent{0em}
+
+% set line spacing
+\setstretch{0.9}
+
+% define space between list items
+\newcommand{\listitemspace}{0.25em}
+
+% make unordered lists without bullets and use compact spacing
+\renewenvironment{itemize}
+{\begin{list}{}{\setlength{\leftmargin}{0em}
+                \setlength{\parskip}{0em}
+                \setlength{\itemsep}{\listitemspace}
+                \setlength{\parsep}{\listitemspace}}}
+{\end{list}}
+
+% make tabbed lists so content is left-aligned next to years
+\TabPositions{\listtabwidth}
+\newlist{tablist}{description}{3}
+\setlist[tablist]{leftmargin=\listtabwidth,
+    labelindent=0em,
+    topsep=0em,
+    partopsep=0em,
+    itemsep=\listitemspace,
+    parsep=\listitemspace,
+    font=\normalfont}
+
+% print only the month and year when using \today
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
+
+% define hyperlink appearance and metadata for pdf properties
+\hypersetup{
+    colorlinks  = true,
+    urlcolor    = black,
+    pdfauthor   = {\myname},
+    pdfkeywords = {DNA nanotechnology, Cryo-EM, protein design and engineering, molecular motors, single molecule force spectroscopy, protein folding},
+    pdftitle    = {\myname: Curriculum Vitae},
+    pdfsubject  = {Curriculum Vitae},
+    pdfpagemode = UseNone
+}
+
+\begin{document}
+    \raggedright{}
+
+    % display your name as the document title
+    \namefont{\myname}
+
+    % affiliation and contact info blocks
+    \vspace{1em}
+    \begin{minipage}[t]{0.700\textwidth}
+        % current primary affiliation, left-aligned
+        Nautilus Biotechnology \\
+        201 Industrial Rd \#310 \\
+        San Carlos, CA \\
+    \end{minipage}
+    \begin{minipage}[t]{0.295\textwidth}
+        % contact info details, right-aligned
+        \flushright{}
+        \href{mailto:turalaksel@ngmail.com}{turalaksel@gmail.com} \\
+        +1 410 369 6615 \\
+        \href{https://turalaksel.com}{turalaksel.com}
+    \end{minipage}
+
+
+    \section*{Education}
+
+    \begin{tablist}
+
+        \item[Ph.D.] \tab{}Biophysics \hfill 2012\\
+        \textbf{Johns Hopkins University}, Baltimore, MD\\
+        \textit{Thesis Advisor}: Doug Barrick 
+        
+        \item[B.S.]  \tab{}Biological Sciences and Bioengineering \hfill 2006\\
+        \textbf{Sabanci University}, Istanbul, Turkey\\
+        \textit{Thesis Advisor}: Ugur Sezerman
+
+    \end{tablist}
+
+
+
+    \section*{Academic \& Professional experience}
+
+    \begin{tablist}
+
+        \item[2020--]   \tab{}Nautilus Biotechnology, San Carlos \\
+                             Senior Scientist, DNA Nanotechnology\\
+                             I lead a team to develop novel DNA Nanotechnology devices for proteomics research.
+
+        \item[2018--20] \tab{}University of California, San Francisco \\
+                             Applications Programmer III \\
+                             \textit{PI}: Shawn Douglas
+
+        \item[2015--18]\tab{}University of California, San Francisco \\
+                             Postdoctoral Fellow, Department of Cellular and Molecular Pharmacology \\
+                             \textit{PI}: Shawn Douglas
+
+        \item[2013--15]\tab{}Stanford University \\
+                             Postdoctoral Fellow, Biochemistry Department \\
+                             \textit{PI}: James Spudich
+        \item[2006]\tab{}Sabanci University, Istanbul, Turkey \\
+                             Instructor, Computer Science Department\\
+                             \textit{Course}: Data Structures
+
+    \end{tablist}
+
+    \section*{Research Interests}
+
+    \begin{itemize}
+
+        \item I develop DNA nanotechnology tools for cryo electron microscopy, proteomics research, immunotherapy and bioenergy production. I also develop scientific software for biomolecular design, image processing and data analysis.
+
+    \end{itemize}
+
+    \section*{Publications}
+
+    \subsection*{Journal Articles}
+
+    \begin{tablist}
+
+        \item[2021] \tab{}Dong R, \textbf{Aksel T}, Chan W, Germain RN, Vale RD, Douglas SM \enquote{DNA origami patterning of synthetic T cell receptors reveals spatial control of the sensitivity and kinetics of signal activation.} \textit{Proc. Natl. Acad. Sci. U. S. A.} 118 (40) e2109057118 \href{https://doi.org/10.1073/pnas.2109057118}{doi:10.1073/pnas.2109057118}
+
+        \item[2021] \tab{}\textbf{Aksel T}, Yu Z, Cheng Y , Douglas SM \enquote{Molecular goniometers for single-particle cryo-EM of DNA-binding proteins.} \textit{Nature Biotechnology} 39 (3):378--386. \href{https://doi.org/10.1038/s41587-020-0716-8}{doi:10.1038/s41587-020-0716-8}
+
+        \item[2021] \tab{}Marold JD, Sforza K, Geiger-Schuller K, \textbf{Aksel T}, Klein S, Petersen M, Poliakova‐Georgantas E, Barrick D. \enquote{A collection of programs for one‐dimensional Ising analysis of linear repeat proteins with point substitutions.} \textit{Protein Science} 30 (1):168--186 \href{https://doi.org/10.1002/pro.3977}{doi:10.1002/pro.3977}
+
+        \item[2020] \tab{}Wang F, Yu Z, Betegon M, Campbell MG, \textbf{Aksel T}, Zhap J, Li S, Douglas SM, Cheng Y, Agard DA. \enquote{Amino and PEG-amino graphene oxide grids enrich and protect samples for high-resolution single particle cryo-electron microscopy.} \textit{Journal of Structural Biology} 209 (2):107437 \href{https://doi.org/10.1016/j.jsb.2019.107437}{doi:10.1016/j.jsb.2019.107437}
+
+        \item[2018] \tab{}Nafisi P, \textbf{Aksel T}, Douglas SM. \enquote{Construction of a novel phagemid to produce custom DNA origami scaffolds.} \textit{Synthetic Biology},3 (1):ysy015 \href{https://doi.org/10.1093/synbio/ysy015}{doi:10.1093/synbio/ysy015}
+
+        \item[2016] \tab{}Spudich JA, \textbf{Aksel T}, Bartholomew SR, Nag S, Kawana M, Yu EC, Sarkar SS, Sung J, Sommese RF, Sutton S, Cho C, Adhikari AS, Sutton S, Taylor R, Liu C, Trivedi D, Ruppel KM. \enquote{Effects of hypertrophic and dilated cardiomyopathy mutations on power output by human $\beta$-cardiac myosin.} \textit{Journal of Experimental Biology} \href{https://doi.org/10.1242/jeb.125930}{doi:10.1242/jeb.125930}
+
+        \item[2015] \tab{}\textbf{Aksel T}, Yu EC, Sutton S, Ruppel KM, Spudich JA. \enquote{Ensemble Force Changes that Result from Human Cardiac Myosin Mutations and a Small-Molecule Effector.} \textit{Cell Reports} 11 (6):910--920. \href{https://doi.org/10.1016/j.celrep.2015.04.006}{doi:10.1016/j.celrep.2015.04.006}
+
+        \item[2015] \tab{}Preimesberger MR, Majumdar A, \textbf{Aksel T}, Sforza K, Lectka T, Barrick D, Lecomte JT, Barrick, D. \enquote{Direct NMR Detection of Bifurcated Hydrogen Bonding in the $\alpha$-Helix N-Caps of Ankyrin Repeat Proteins.} \textit{J Am Chem Soc.} 137 (3):1008--11 \href{https://doi.org/10.1021/ja510784g}{doi:10.1021/ja510784g}
+
+        \item[2014] \tab{}\textbf{Aksel T}, Barrick D. \enquote{Direct observation of parallel folding pathways revealed using a symmetrical repeat protein system.} \textit{Biophysical J.} 107 (1):220--232 \href{https://doi.org/10.1016/j.bpj.2014.04.058}{doi:10.1016/j.bpj.2014.04.058}
+
+        \item[2011] \tab{}Rouget JB, \textbf{Aksel T}, Roche J, Saldana JL, Garcia AE, Barrick D, Royer CA. \enquote{Size and sequence and the volume change of protein folding.} \textit{J Am Chem Soc.} 133 (15):6020--6027 \href{https://doi.org/10.1021/ja200228w}{doi:10.1021/ja200228w}
+
+        \item[2011] \tab{}\textbf{Aksel T}, Majumdar A, Barrick D. \enquote{The contribution of entropy, enthalpy, and hydrophobic desolvation to cooperativity in repeat-protein folding.} \textit{Structure} 19 (3):349--360 \href{https://doi.org/10.1016/j.str.2010.12.018}{doi:10.1016/j.str.2010.12.018}
+
+        \item[2009] \tab{}\textbf{Aksel T}, Barrick D. \enquote{Analysis of repeat-protein folding using nearest-neighbor statistical mechanical models.} \textit{Methods in Enzymology} 455:95--125. \href{https://doi.org/10.1016/S0076-6879(08)04204-3}{doi:10.1016/S0076-6879(08)04204-3}
+
+    \end{tablist}
+
+    \subsection*{Manuscripts in preparation}
+
+    \begin{tablist}
+
+        \item[\the\year] \tab{}\textbf{Aksel T}*, Damasceno P, Douglas SM*. \enquote{Rapid coarse-grained 3D structure prediction of multidomain DNA origami.}
+
+        \item[\the\year] \tab{}\textbf{Aksel T}*, Navarro E, Douglas SM*. \enquote{Thermodynamic optimization of DNA origami staple routing via k-shortest-paths.}
+
+        \item[\the\year] \tab{}\textbf{Aksel T}*†, Fong N†, Douglas SM*. \enquote{NanoToolkit: a web-based framework for DNA origami design, simulation, and gel analysis.}
+
+    \end{tablist}
+    
+    \section*{Patents}
+
+    \begin{tablist}
+
+        \item[2021] \tab{}Coinventor of US Patent Application assigned to Nautilus Biotechnology, Filed 2021, Confidential.
+        \item[2021] \tab{}Coinventor of US Patent Application assigned to Nautilus Biotechnology, Filed 2021, Confidential.
+        \item[2020] \tab{}Coinventor of US Patent Application assigned to Nautilus Biotechnology, Filed 2020, Confidential.
+
+    \end{tablist}
+
+    \section*{Talks and Poster presentations}
+
+    \subsection*{Invited Talks}
+
+    \begin{tablist}
+
+        \item[2019] \tab{}\enquote{Development of a DNA nanotechnology platform cryo-EM studies of small proteins.} BIO Seminar. Sabanci University, Istanbul, Turkey. July 16.
+
+        \item[2018] \tab{}\enquote{Hands-On Workshop on Structural DNA Nanotechnology} University of Illinois, Urbana-Champaign, Urbana, IL. September 24-26.
+
+        \item[2018] \tab{}\enquote{Development of DNA Origami tools for single particle cryo-EM studies.} Johns Hopkins University Biophysics Department. Baltimore, MD.
+
+        \item[2017] \tab{}\enquote{Development of DNA Origami tools for single particle cryo-EM studies.} Stanford Biochemistry Department. Stanford, CA.
+
+        \item[2013] \tab{}\enquote{Elucidating the origins of cooperativity and parallel pathways in protein folding with a highly symmetrical repeat protein system.} Sabanci University, Istanbul, Turkey.
+
+        \item[2011] \tab{}\enquote{Understanding the Origins of Cooperativity and Pathway Selection in Protein Folding using a Designed Repeat Protein.} Laboratory of Molecular Biophysics Speaker Seminar Series, NIH, Bethasda, MD.
+    
+    \end{tablist}
+
+    \subsection*{Conference Talks}
+
+    \begin{tablist}
+
+        \item[2019] \tab{}\enquote{Development of a DNA Origami platform for cryo-EM studies of small proteins.} Molecular Programming Project. Caltech. Pasadena, CA.
+
+         \item[2017] \tab{}\enquote{Development of DNA Origami tools for single particle cryo-EM studies.} UCSF Center for Cellular Construction Retreat. San Francisco, CA. 
+
+        \item[2014] \tab{}\enquote{A DCM and an LVNC mutation in adjacent positions in primary sequence have opposite impact on cardiac myosin power generation.} BioX Symposium. Stanfard University, Stanfordm CA.
+
+         \item[2013] \tab{}\enquote{Improved loaded in vitro motility assay and actin filament tracking software delineates the effect of hypertrophic and dilated cardiomyopathy mutations on cardiac myosin power output.} Stanford Biochemistry Retreat. South Lake Tahoe, CA.
+
+         \item[2011] \tab{}\enquote{Determinants of cooperativity in repeat protein folding.} 55th Annual Biophysical Society Meeting. Baltimore, MD, 2011.
+
+         \item[2009] \tab{}\enquote{Determinants of intrinsic and interfacial effects in repeat protein folding.} 23rd Annual Gibbs Conference on Biothermodynamics. Carbondale, IL.
+
+
+    \end{tablist}
+
+    \subsection*{Poster Presentations}
+
+    \begin{tablist}
+
+        \item[2019] \tab{}\enquote{DNA Nanotechnology platform for cryo-EM studies of small proteins.} Foundations of Nano Science: Self-Assembled Architechtures and Devices (FNANO18). Snowbird, UT.
+
+        \item[2014] \tab{}\enquote{A new loaded in vitro motility assay and actin filament tracking software delineates the effect of hypertrophic and dilated cardiomyopa- thy mutations on the power output of cardiac myosin.} Gordon Research Conferences: Muscle and Molecular Motors. West Dover, VT.
+
+        \item[2014] \tab{}\enquote{Improved loaded in vitro motility assay and actin filament tracking software delineates the effect of hypertrophic and dilated cardiomyopathy mutations on the power output of cardiac myosin.} Biophysical Society Meeting. San Francisco, CA.
+
+        \item[2011] \tab{}\enquote{Can increasing size also increase the folding rate? Degeneracy in repeat protein folding?}. Berkeley Protein FOlding Workshop. Berkeley, CA.
+
+        \item[2010] \tab{}\enquote{Determinants of cooperativity in repeat protein folding.} 24th Annual Gibbs Conference on Biothermodynamics. Carbondale, IL.
+
+        \item[2008] \tab{}\enquote{One dimensional Ising model for the study of consensus Ankyrin repeats.} 22nd Annual Gibbs Conference on Biothermodynamics. Carbondale, IL.
+
+    \end{tablist}
+
+
+    \section*{Grants and Awards}
+
+    \subsection*{Awards and Honors}
+
+    \begin{tablist}
+
+        \item[2008] \tab{}Brian Key PhD Student Travel Award.
+        \item[2001--06] \tab{}High Honor Scholarship, Sabanci University. Istanbul, Turkey. Full tuition and accommodation coverage.
+        \item[2001] \tab{}Ranked 62nd in Turkish university entrance exam among 1.4 million participants.
+        \item[1998] \tab{}Ranked 56th in Turkish high school entrance exam among 0.5 million participants.
+
+    \end{tablist}
+
+    \subsection*{Grants and Fellowships}
+
+    \begin{tablist}
+
+        \item[2016--17] \tab{} F32 Ruth L. Kirschstein Postdoctoral Individual National Research Service Award (NIGMS:F32GM119322). 
+
+    \end{tablist}
+
+
+    \section*{Teaching}
+
+
+    \begin{tablist}
+
+        \item[2020] \tab{}\textbf{DNA Origami 101}\\
+        Designed and taught a DNA Origami design course for the Reagents R\&D team.\\
+        Nautilus Biotechnology. San Carlos, CA.
+
+        \item[2018] \tab{}\textbf{"Hands-On" Workshop on Structural DNA Nanotechnology}\\
+        Instructed DNA Origami design pipeline using NanoTK. \\ 
+        University of Illinois, Urbana-Champaign. 
+
+        \item[2007] \tab{}\textbf{Biophysics} \\ 
+        Teaching assistant for the Biphysics course. \\
+        Johns Hopkins University. Baltimore, MD.   
+
+        \item[2006] \tab{}\textbf{Data Structures}\\
+        Instructed Data Structures in summer school. \\ 
+        Sabanci University. Istanbul, Turkey.
+
+    \end{tablist}
+
+    \section*{References}
+
+    \begin{tabular}{lll}
+        Doug Barrick&  Shawn M. Douglas & James Spudich \\
+        \hline \\
+        Professor and Chair of Biophysics  & Assistant Professor & Professor \\
+        Johns Hopkins University  & University of California, San Francisco & Stanford University \\
+        216 Jenkins Hall  & 600 16th St. & Beckman Center B400 \\
+        Baltimore, MD 21218  & San Francisco, CA 94143 & Stanford, CA 94305 \\
+        Phone: (410) 516-0409 & Phone: (415) 502-1947 & Phone:(650) 723-7634\\
+        Email: barrick@jhu.edu  & Email: shawn.douglas@ucsf.edu & Email: jspudich@stanford.edu
+
+    \end{tabular}
+
+    \vspace{3em}
+
+    \begin{tabular}{ll}
+        Parag Mallick & Ronald D. Vale \\
+        \hline \\
+        Associate Professor &  HHMI Vice President and Executive Director \\
+        Stanford University & Janelia Research Campus \\
+        3155 Porter Drive & 19700 Helix Dr \\
+        Stanford, CA 94304 & Ashburn, VA 20147 \\
+        Phone: (415) 627-8982 & Phone: (571) 209-4000\\
+        Email: paragm@stanford.edu & Email: valer@janelia.hhmi.org
+    \end{tabular}
+
+    % display today's date as Month Year after a vertical space below the end of the text
+    \begin{center}
+        \vfill
+        Updated \monthyeardate\today
+    \end{center}
+
+\end{document}
