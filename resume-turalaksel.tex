@@ -18,6 +18,7 @@
 \usepackage{titlesec} % allow custom section fonts
 \usepackage{setspace} % custom line spacing
 \usepackage{makecell} % for line breaks in table format
+\usepackage{scrextend} % addmargin
 
 % what is your name?
 \newcommand{\myname}{Tural Aksel}
@@ -226,7 +227,9 @@
 
     \section*{Laboratory Skills}
     \begin{itemize}
-        \item \textbullet \hspace{0.2cm} Cryogenic electron microscopy (cryo-EM).
+        \item \textbullet \hspace{0.2cm} Bioconjugation.
+        \item \textbullet \hspace{0.2cm} DNA Nanotechnology, DNA Origami design, production and scale-up.
+        \item \textbullet \hspace{0.2cm} Cryogenic electron microscopy (cryo-EM), negative-stain TEM.
         \item \textbullet \hspace{0.2cm} Recombinant DNA technologies, bacterial and mammalian protein expression, protein chromatography.
         \item \textbullet \hspace{0.2cm} CD and fluorescence spectroscopy, biomolecular NMR, SAXS/WAXS, analytical ultracentrifugation, stopped-flow kinetics.
         \item \textbullet \hspace{0.2cm} Single molecule force spectroscopy, fluorescence microscopy.
@@ -237,15 +240,91 @@
     \subsection*{Journal Articles}
     For Complete list of publications, please see \href{https://scholar.google.com/citations?user=K91MviEAAAAJ&hl=en}{Google scholar}\\
 
-    \begin{tablist}
+        \begin{tablist}
 
         \item[2021] \tab{}Dong R, \textbf{Aksel T}, Chan W, Germain RN, Vale RD, Douglas SM \enquote{DNA origami patterning of synthetic T cell receptors reveals spatial control of the sensitivity and kinetics of signal activation.} \textit{Proc. Natl. Acad. Sci. U. S. A.} 118 (40) e2109057118 \href{https://doi.org/10.1073/pnas.2109057118}{doi:10.1073/pnas.2109057118}
 
+        \begin{addmargin}[1cm]{0cm} 
+            In this paper, DNA Origami is utilized to control the density of the ligands presented to Car-T cells. The findings demonstrate that there is a minimum density of ligands required for Car-T cell activation. This study could be regarded as a proof-of-principle work for the DNA Origami assisted immunotherapy applications. 
+        \end{addmargin} 
+
         \item[2021] \tab{}\textbf{Aksel T}, Yu Z, Cheng Y , Douglas SM \enquote{Molecular goniometers for single-particle cryo-EM of DNA-binding proteins.} \textit{Nature Biotechnology} 39 (3):378--386. \href{https://doi.org/10.1038/s41587-020-0716-8}{doi:10.1038/s41587-020-0716-8}
+        
+        \begin{addmargin}[1cm]{0cm}
+            This paper presents a DNA Origami platform for the positional control of DNA binding proteins in cryo-EM studies. For single-particle cryo-EM, samples are deposited randomly on a grid. For small proteins, knowing the orientation of particles could be critical to reach higher resolutions. Here, we demonstrated that knowing the orientation of particles is necessary to detemine the structure of an 80 kDa DNA binding protein. Without the positional information provided by DNA Origami, the reconstruction algorithms fail to determine the correct orientation of the particles. This work is the stepping-stone for programmable and multiplexed cryo-EM using DNA Origami. 
+        \end{addmargin}
+
+        \item[2021] \tab{}Marold JD, Sforza K, Geiger-Schuller K, \textbf{Aksel T}, Klein S, Petersen M, Poliakova‐Georgantas E, Barrick D. \enquote{A collection of programs for one‐dimensional Ising analysis of linear repeat proteins with point substitutions.} \textit{Protein Science} 30 (1):168--186 \href{https://doi.org/10.1002/pro.3977}{doi:10.1002/pro.3977}
+        
+        \begin{addmargin}[1cm]{0cm}
+            This paper presents a collection of python scripts for the Ising-model analysis of repeat protein equilibrium folding data. These tools are developed onto the Ising-model formalism I developed during my Ph.D studies.  
+        \end{addmargin}
+        
+        \item[2020] \tab{}Wang F, Yu Z, Betegon M, Campbell MG, \textbf{Aksel T}, Zhap J, Li S, Douglas SM, Cheng Y, Agard DA. \enquote{Amino and PEG-amino graphene oxide grids enrich and protect samples for high-resolution single particle cryo-electron microscopy.} \textit{Journal of Structural Biology} 209 (2):107437 \href{https://doi.org/10.1016/j.jsb.2019.107437}{doi:10.1016/j.jsb.2019.107437}
+
+        \begin{addmargin}[1cm]{0cm}
+            This paper presents the production of amine coated graphene-oxide grids for cryo-EM sample preparation. These grids have low background and they keep DNA Origami structures intact for cryo-EM studies. 
+        \end{addmargin}
+
+        \item[2018] \tab{}Nafisi P, \textbf{Aksel T}, Douglas SM. \enquote{Construction of a novel phagemid to produce custom DNA origami scaffolds.} \textit{Synthetic Biology},3 (1):ysy015 \href{https://doi.org/10.1093/synbio/ysy015}{doi:10.1093/synbio/ysy015}
+
+        \begin{addmargin}[1cm]{0cm}
+            Here, we present a scalable method to create DNA Origami scaffolds with custom sequence. This method enables the production of very small and large DNA Origami structures. This method provides a path for the development of DNA Origami assemblies in a single pot reaction with high yields. This method also allows the development of DNA Origami structures with unique functional sequences presented in the scaffold. This method has allowed us the development of DNA Origami Goniometers with the target protein binding sequence.    
+        \end{addmargin}
+
+        \item[2016] \tab{}Spudich JA, \textbf{Aksel T}, Bartholomew SR, Nag S, Kawana M, Yu EC, Sarkar SS, Sung J, Sommese RF, Sutton S, Cho C, Adhikari AS, Sutton S, Taylor R, Liu C, Trivedi D, Ruppel KM. \enquote{Effects of hypertrophic and dilated cardiomyopathy mutations on power output by human $\beta$-cardiac myosin.} \textit{Journal of Experimental Biology} \href{https://doi.org/10.1242/jeb.125930}{doi:10.1242/jeb.125930}
+        
+        \begin{addmargin}[1cm]{0cm}
+            This paper reviews the studies performed in Spudich lab to understand how cardiomyopathy mutations impact the power output of human cardiac myosin. The review points that all dilated cardiomyopathy mutations lead to power output. On the other hand, hypertrophic cardiomyopathy (HCM) mutations  lead to higher or lower power output suggesting that there could be different mechanisms by which HCM mutations lead to disease phenotype.         
+        \end{addmargin}
 
         \item[2015] \tab{}\textbf{Aksel T}, Yu EC, Sutton S, Ruppel KM, Spudich JA. \enquote{Ensemble Force Changes that Result from Human Cardiac Myosin Mutations and a Small-Molecule Effector.} \textit{Cell Reports} 11 (6):910--920. \href{https://doi.org/10.1016/j.celrep.2015.04.006}{doi:10.1016/j.celrep.2015.04.006}
+        
+        \begin{addmargin}[1cm]{0cm}
+            This paper presents a new microscopy assay for the quantification of cardiac myosin power output and a new image processing software for the analysis of assay movies. The paper also presents a physical model to convert the quantities measured using the assay to a "power parameter" that is required to compare different mutants. We demonstrated the utility of the assay and the analysis tool using alpha and beta cardiac myosin isoforms, two cardiomyopathy mutants and a drug that leads to higher cardiac output. This assay and the analysis tool have been used by members of Spudich Lab and other research groups to study cardiac and other myosin variants.   
+        \end{addmargin}
+
+        \item[2015] \tab{}Preimesberger MR, Majumdar A, \textbf{Aksel T}, Sforza K, Lectka T, Barrick D, Lecomte JT, Barrick, D. \enquote{Direct NMR Detection of Bifurcated Hydrogen Bonding in the $\alpha$-Helix N-Caps of Ankyrin Repeat Proteins.} \textit{J Am Chem Soc.} 137 (3):1008--11 \href{https://doi.org/10.1021/ja510784g}{doi:10.1021/ja510784g}
+        
+        \begin{addmargin}[1cm]{0cm}
+            This paper talks about the observation of bifurcated hydrogen bonding with a burried histidine in Ankyrin repeats using NMR. It is shown that the bifurcated hydrogen bonding is important for the stability of Ankyrin repeats.     
+        \end{addmargin}
+       
+        \item[2014] \tab{}\textbf{Aksel T}, Barrick D. \enquote{Direct observation of parallel folding pathways revealed using a symmetrical repeat protein system.} \textit{Biophysical J.} 107 (1):220--232 \href{https://doi.org/10.1016/j.bpj.2014.04.058}{doi:10.1016/j.bpj.2014.04.058}
+
+        \begin{addmargin}[1cm]{0cm}
+            In this paper, we show that there are degenarate folding pathways for consensus ankyrin repeat proteins. We demonstrate the existence of parallel pathways by showing that the folding rate linearly depends on the number of repeats. These findings suggest that multiple folding pathways can be observed for proteins with symmetrical folding landscapes.
+        \end{addmargin}
+
+        \item[2011] \tab{}Rouget JB, \textbf{Aksel T}, Roche J, Saldana JL, Garcia AE, Barrick D, Royer CA. \enquote{Size and sequence and the volume change of protein folding.} \textit{J Am Chem Soc.} 133 (15):6020--6027 \href{https://doi.org/10.1021/ja200228w}{doi:10.1021/ja200228w}
+
+        \begin{addmargin}[1cm]{0cm}
+            This paper shows that there is a correlation between the volume change in protein folding and the volume of internal cavities estimated from the structure. 
+        \end{addmargin}
 
         \item[2011] \tab{}\textbf{Aksel T}, Majumdar A, Barrick D. \enquote{The contribution of entropy, enthalpy, and hydrophobic desolvation to cooperativity in repeat-protein folding.} \textit{Structure} 19 (3):349--360 \href{https://doi.org/10.1016/j.str.2010.12.018}{doi:10.1016/j.str.2010.12.018}
+
+        \begin{addmargin}[1cm]{0cm}
+            In this paper, we show that hydrophobic desolvation is a major contributor to folding cooperativity. We used a symmetrical repeat protein system to dissect folding energetics into repeat stability and coperativity terms using Ising model.   
+        \end{addmargin}
+
+        \item[2009] \tab{}\textbf{Aksel T}, Barrick D. \enquote{Analysis of repeat-protein folding using nearest-neighbor statistical mechanical models.} \textit{Methods in Enzymology} 455:95--125. \href{https://doi.org/10.1016/S0076-6879(08)04204-3}{doi:10.1016/S0076-6879(08)04204-3}
+
+         \begin{addmargin}[1cm]{0cm}
+            This is a methods paper presenting Ising model formalism to study repeat protein folding. The paper presents a framework to extract repeat stability and repeat-repeat coupling terms from repeat protein equilibrium folding data.
+         \end{addmargin}
+
+    \end{tablist}
+    
+    \subsection*{Manuscripts in preparation}
+
+    \begin{tablist}
+
+        \item[\the\year] \tab{}\textbf{Aksel T}*, Damasceno P, Douglas SM*. \enquote{Rapid coarse-grained 3D structure prediction of multidomain DNA origami.}
+
+        \item[\the\year] \tab{}\textbf{Aksel T}*, Navarro E, Douglas SM*. \enquote{Thermodynamic optimization of DNA origami staple routing via k-shortest-paths.}
+
+        \item[\the\year] \tab{}\textbf{Aksel T}*†, Fong N†, Douglas SM*. \enquote{NanoToolkit: a web-based framework for DNA origami design, simulation, and gel analysis.}
 
     \end{tablist}
     
