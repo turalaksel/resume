@@ -17,6 +17,7 @@
 \usepackage{enumitem} % enumerate with [resume] option
 \usepackage{titlesec} % allow custom section fonts
 \usepackage{setspace} % custom line spacing
+\usepackage{makecell} % for line breaks in table format
 
 % what is your name?
 \newcommand{\myname}{Tural Aksel}
@@ -61,6 +62,9 @@
                 \setlength{\itemsep}{\listitemspace}
                 \setlength{\parsep}{\listitemspace}}}
 {\end{list}}
+
+% Update cell alignment
+\renewcommand{\cellalign}{cl}
 
 % make tabbed lists so content is left-aligned next to years
 \TabPositions{\listtabwidth}
@@ -116,7 +120,7 @@
 
         \item \textbullet \hspace{0.2cm} Development of DNA nanotechnology tools for structural biology, proteomics, immunotherapy and bioenergy production. 
         \item \textbullet \hspace{0.2cm} Scientific software development for biomolecular design, image processing and data analysis.
-        \item \textbullet \hspace{0.2cm} Protein engineering and design for hybrid DNA Origami-protein complexes. 
+        \item \textbullet \hspace{0.2cm} Protein engineering and design for hybrid DNA Origami-protein complexes.
 
     \end{itemize}
 
@@ -138,7 +142,7 @@
 
     \begin{tablist}
 
-        \item[2020--]   \tab{}Nautilus Biotechnology, San Carlos \\
+        \item[2019--]   \tab{}Nautilus Biotechnology, San Carlos \\
                              \textbf{Senior Scientist}, DNA Nanotechnology\\
                              \begin{itemize}
                                 \item \textbullet \hspace{0.2cm} I lead a team to develop DNA Origami devices for proteomics research. I direct day-to-day and long term research activities of my team members.
@@ -150,21 +154,21 @@
                              \textbf{Applications Programmer III} \\
                              \textit{PI}: Shawn Douglas \\
                              \begin{itemize}
-                                \item \textbullet \hspace{0.2cm} I developed a DNA nanotechology platform and image processing pipeline for high-resolution cryo-EM studies of small proteins. The technology enables structural studies of small DNA binding proteins that wouldn't be otherwise studied using conventional cryo-EM. The method is published in Nature Biotechnology. 
+                                \item \textbullet \hspace{0.2cm} I developed a DNA nanotechnology platform and image processing pipeline on AWS cloud for high-resolution cryo-EM studies of small proteins. The technology enables structural studies of small DNA binding proteins that wouldn't be otherwise studied using conventional cryo-EM. The method is published in Nature Biotechnology. 
                                 \begin{itemize}
                                     \item \hspace{1cm} \textbf{Publication:} \href{https://doi.org/10.1038/s41587-020-0716-8}{Aksel T et al.(2021) \textit{Nature Biotechnology}}. 
                                     \item \hspace{1cm} \textbf{Cryoorigami software package:} \href{https://github.com/douglaslab/cryoorigami} {github.com/douglaslab/cryoorigami}. 
                                 \end{itemize}
-                                \item \textbullet \hspace{0.2cm} I developed new methods and software for 1) Thermodynmaically optimized DNA Origami designs, and 2) DNA Origami structure prediction. The tools will be made publicly available in a webserver (in progress).
+                                \item \textbullet \hspace{0.2cm} I developed new methods and software for 1) Thermodynamically optimized DNA Origami designs, and 2) DNA Origami structure prediction. The tools will be made publicly available in a webserver (in progress).
                              \end{itemize} 
 
         \item[2015--18]\tab{}University of California, San Francisco \\
                              \textbf{Postdoctoral Fellow}, Department of Cellular and Molecular Pharmacology \\
                              \textit{PI}: Shawn Douglas
                              \begin{itemize}
-                                \item \textbullet \hspace{0.2cm} I worked on the developement of a DNA nanotechology platform for high-resolution cryo-EM studies of small proteins.
+                                \item \textbullet \hspace{0.2cm} I worked on the development of a DNA nanotechology platform for high-resolution cryo-EM studies of small proteins.
                                 \item \textbullet \hspace{0.2cm} I developed a scalable technology for the production of custom DNA Origami scaffolds.
-                                \item \textbullet \hspace{0.2cm} I designed a DNA Origami structure for tunable actvation of Car-T cells. The DNA Origami design and the results for the publication are published in PNAS.
+                                \item \textbullet \hspace{0.2cm} I designed a DNA Origami structure for tunable activation of Car-T cells. The DNA Origami design and the results for the publication are published in PNAS.
                                 \begin{itemize}
                                     \item \hspace{1cm} \textbf{Publication:} \href{https://doi.org/10.1073/pnas.2109057118}{Dong R, Aksel T et al.(2021) \textit{PNAS}}
                                 \end{itemize}
@@ -187,17 +191,17 @@
                              \textbf{Ph.D. student}, Department of Biophysics\\
                              \textit{PI}: Doug Barrick \\
                              \begin{itemize}
-                                \item \textbullet \hspace{0.2cm} I studied the origins of cooperativity and pathway diversity in protein folding using consensus Ankyrin repeat proteins (CARPs). I generated CARPs from identical consensus Ankyrin repeat units by a modular cloning approach. 
+                                \item \textbullet \hspace{0.2cm} I studied the origins of cooperativity and pathway diversity in protein folding using consensus Ankyrin repeat proteins (CARPs). I generated CARPs from identical consensus Ankyrin repeat units by a modular cloning method. 
                                 \begin{itemize}
                                     \item \hspace{1cm} \textbf{Publication:} \href{https://doi.org/10.1016/j.str.2010.12.018}{Aksel T et al.(2011) \textit{Structure}}
                                 \end{itemize} 
-                                \item \textbullet \hspace{0.2cm} To dissect folding energetics into individual repeat stability and repeat-repeat interface terms, I developed a nearest-neighbor model called Ising model. I developed a python package to fit the Ising model to a series of equilibrium and kinetic folding data to determine thermodynamic values for single repeat folding and repeat-repeat interface formation.
+                                \item \textbullet \hspace{0.2cm} I developed a nearest-neighbor statistical physical model called Ising model to dissect folding energetics into individual repeat stability and repeat-repeat interface terms for repeat proteins from experimental data. I developed a python package to fit the Ising model to a series of equilibrium and kinetic folding data to determine the folding energy for single repeat folding and repeat-repeat interface formation.
                                 \begin{itemize}
                                     \item \hspace{1cm} \textbf{Publication:} \href{https://doi.org/10.1016/S0076-6879(08)04204-3}{Aksel T et al.(2009) \textit{Methods in Enzymology}}
                                     \item \hspace{1cm} \textbf{Isingbul data fitting software:} \href{https://github.com/turalaksel/IsingBul1.0} {github.com/turalaksel/IsingBul1.0}.
                                 \end{itemize} 
 
-                                \item \textbullet \hspace{0.2cm} I developed an efficient software, written in C++, to calculate 3-D thermodynamic partition function for biological systems.
+                                \item \textbullet \hspace{0.2cm} I developed an efficient software, written in C++, to calculate the 3D Ising Model partition function for biological systems. I used this tool to predict the pKa values of titratable residues from protein structure.
                             \end{itemize} 
         
         \item[2006]\tab{}Sabanci University, Istanbul, Turkey \\
@@ -205,6 +209,7 @@
                              \textit{Course}: Data Structures
                              \begin{itemize}
                                 \item \textbullet \hspace{0.2cm} I taught the summer school Data structures course in computer science department.
+                                \item \textbullet \hspace{0.2cm} I developed an homology model algorithm for structure prediction of protein sequences. The algorithm recursively finds the best matching patterns between two protein sequences using dynamic algorithm.  
                             \end{itemize}
 
     \end{tablist}
@@ -214,8 +219,9 @@
     \section*{Programming Skills}
     \begin{itemize}
         \item \textbullet \hspace{0.2cm} Computing Environments: Matlab, IPython, Scilab, R, AWS clound computing.
-        \item \textbullet \hspace{0.2cm} Languages: C, C++, Python, Perl, Shell scripting.
+        \item \textbullet \hspace{0.2cm} Languages: Python, C, C++, Perl, Shell scripting.
         \item \textbullet \hspace{0.2cm} Operating Systems: Unix/Linux, Windows, Mac OS.
+        \item \textbullet \hspace{0.2cm} Biomolecular Modeling: Pymol, PyRosetta, Cadnano.
     \end{itemize}
 
     \section*{Laboratory Skills}
@@ -274,7 +280,7 @@
 
     \end{tablist}
 
-    \section*{References}
+    \section*{Academic References}
 
     \begin{tabular}{lll}
         Doug Barrick&  Shawn M. Douglas & James Spudich \\
@@ -290,16 +296,29 @@
 
     \vspace{3em}
 
-    \begin{tabular}{ll}
-        Parag Mallick & Ronald D. Vale \\
+    \begin{tabular}{l}
+        Ronald D. Vale \\
         \hline \\
-        Associate Professor &  HHMI Vice President and Executive Director \\
-        Stanford University & Janelia Research Campus \\
-        3155 Porter Drive & 19700 Helix Dr \\
-        Stanford, CA 94304 & Ashburn, VA 20147 \\
-        Phone: (415) 627-8982 & Phone: (571) 209-4000\\
-        Email: paragm@stanford.edu & Email: valer@janelia.hhmi.org
+        HHMI Vice President and Executive Director \\
+        Janelia Research Campus \\
+        19700 Helix Dr \\
+        Ashburn, VA 20147 \\
+        Phone: (571) 209-4000\\
+        Email: valer@janelia.hhmi.org
     \end{tabular}
+
+    \section*{Professional References}
+
+    \begin{tabular}{lll}
+        Michael Dorwart & Elvis Ikwa & Wayne Rainey\\
+        \hline \\
+        Director of Research &  Associate Scientist & Self employed\\
+        Illumina & Nautilus Biotechnology & \\
+        \makecell{\textit{Former director} \\ \textit{Nautilus Biotechnology}}&  & \makecell{\textit{Former HR Manager} \\ \textit{Nautilus Biotechnology}} \\
+        Email: michaeldorwart@gmail.com & Email: elvisokiring@gmail.com & Email: wrainey929@gmail.com
+    \end{tabular}
+
+
 
     % display today's date as Month Year after a vertical space below the end of the text
     \begin{center}
